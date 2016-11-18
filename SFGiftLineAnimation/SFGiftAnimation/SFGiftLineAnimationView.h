@@ -24,9 +24,15 @@ typedef NS_ENUM(NSInteger, SFGIFT_SHOW_STYLE) {
  动画属性
  animation properties
  */
-@property (nonatomic, assign) CGFloat duration; /** 动画展示时间 one gift-view animation time default 2s */
+@property (nonatomic, assign) CGFloat duration; /** 动画展示时间 one gift-view animation time default 5s */
 @property (nonatomic, assign) CGFloat delay; /** 动画延迟时间 one gift-view animation delay time default 0s */
-@property (nonatomic, assign) CGFloat togetherSpace; /** gift-view一起出现之间的时间间隔 gift-view show together delay time default 0.5s */
+@property (nonatomic, assign) CGFloat speed; /** 每个礼物条展示的速度 gift-view show speed default  (screen.width + gift-view.width(first)) / 5s */
+
+/**
+ SF_TOGETHER_GIFT_SHOW properties
+ */
+@property (nonatomic, assign) CGFloat togetherSpace; /** gift-view一起出现之间的间隔 gift-view show together space default 30pt */
+
 
 /**
  gift view 属性

@@ -36,7 +36,7 @@
     model0.giftName = @"毛利兰";
     
     SFGiftLineModel *model1 = [[SFGiftLineModel alloc] init];
-    model1.sender = @"柯南";
+    model1.sender = @"柯南1111";
     model1.giftName = @"毛利兰";
     
     SFGiftLineModel *model2 = [[SFGiftLineModel alloc] init];
@@ -49,7 +49,7 @@
 #pragma mark -------------------sfGiftLineView---------------
 - (SFGiftLineAnimationView *)sfGiftLineView{
     if (!_sfGiftLineView) {
-        _sfGiftLineView = [[SFGiftLineAnimationView alloc] initWithDirection:SF_RIGHT_SHOW_DIRECTION showStyle:SF_TOGETHER_GIFT_SHOW];
+        _sfGiftLineView = [[SFGiftLineAnimationView alloc] initWithDirection:SF_LEFT_SHOW_DIRECTION showStyle:SF_TOGETHER_GIFT_SHOW];
         _sfGiftLineView.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 50);
         _sfGiftLineView.backgroundColor = [UIColor orangeColor];
     }

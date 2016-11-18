@@ -13,6 +13,7 @@
     NSMutableArray *_dataArray;
     NSMutableArray *_giftViewArr;
     BOOL _isAnimating;
+    SFGiftView *_currentGV;
 }
 @property (nonatomic, assign) SFSHOW_DIRECTION showDirection;
 @property (nonatomic, assign) SFGIFT_SHOW_STYLE showStyle;
@@ -42,7 +43,10 @@
 - (void)startAnimation{
     if (self.showStyle == SF_TOGETHER_GIFT_SHOW) {
         // SF_TOGETHER_GIFT_SHOW
-        [self.togetherTimer fire];
+        if (!_togetherTimer) {
+            [self.togetherTimer fire];
+        }
+        [self togetherAnimation];
     }else{
         // SF_ONE_GIFT_SHOW
         [self oneByOneAnimation];
@@ -61,22 +65,41 @@
     if (_giftViewArr.count != 0) {
         for (SFGiftView *view in _giftViewArr) {
             if (view.isShow == NO) {
+                _currentGV = view;
                 [self togetherAnimationWithView:view];
                 break;
             }
         }
     }else{
         _isAnimating = NO;
+        _currentGV = nil;
         [self.togetherTimer invalidate];
         self.togetherTimer = nil;
     }
 }
 
+- (void)togetherCanShow{
+    NSLog(@"=====%f", _currentGV.layer.presentationLayer.frame.origin.x);
+    NSLog(@"+++++%f", _currentGV.width + self.togetherSpace);
+    if (_currentGV.layer.presentationLayer.frame.origin.x == 0.0) {
+        return;
+    }
+    if (self.showDirection == SF_LEFT_SHOW_DIRECTION) {
+        if (_currentGV.layer.presentationLayer.frame.origin.x >= self.togetherSpace) {
+            [self startAnimation];
+        }
+    }else{
+        if (_currentGV.layer.presentationLayer.frame.origin.x <= self.bounds.size.width - _currentGV.width - self.togetherSpace) {
+            [self startAnimation];
+        }
+    }
+}
 #pragma mark ---------------Animation------------------
 - (void)animationShowOneByOneWithView:(SFGiftView *)giftView{
     giftView.isShow = YES;
     giftView.hidden = NO;
-    [UIView animateWithDuration:self.duration delay:self.delay options:UIViewAnimationOptionCurveLinear animations:^{
+    CGFloat dura = (giftView.width + self.bounds.size.width + self.togetherSpace) * self.speed;
+    [UIView animateWithDuration:dura delay:self.delay options:UIViewAnimationOptionCurveLinear animations:^{
         giftView.frame = [self returnFinalFrameWithView:giftView];
     } completion:^(BOOL finished) {
         [_giftViewArr removeObject:giftView];
@@ -88,8 +111,10 @@
 - (void)togetherAnimationWithView:(SFGiftView *)giftView{
     giftView.isShow = YES;
     giftView.hidden = NO;
-    [UIView animateWithDuration:self.duration delay:self.delay options:UIViewAnimationOptionCurveLinear animations:^{
+    CGFloat dura = (giftView.width + self.bounds.size.width + self.togetherSpace) * self.speed;
+    [UIView animateWithDuration:dura delay:self.delay options:UIViewAnimationOptionCurveLinear animations:^{
         giftView.frame = [self returnFinalFrameWithView:giftView];
+        
     } completion:^(BOOL finished) {
         [_giftViewArr removeObject:giftView];
         [_dataArray removeObject:giftView.model];
@@ -108,7 +133,7 @@
     CGRect frame;
     CGFloat x = self.frame.size.width + 20;
     if (self.showDirection == SF_LEFT_SHOW_DIRECTION) {
-        x = -x;
+        x = - giftView.width - 20.f;
     }
     frame = CGRectMake(x, (self.bounds.size.height - self.gift_height) / 2.f, giftView.width, self.gift_height);
     return frame;
@@ -165,16 +190,23 @@
 
 - (CGFloat)togetherSpace{
     if (!_togetherSpace) {
-        _togetherSpace = 1.f;
+        _togetherSpace = 30;
     }
     return _togetherSpace;
 }
 
+- (CGFloat)speed{
+    if (!_speed) {
+        _speed = self.duration / (self.bounds.size.width + 162.f + self.togetherSpace);
+    }
+    return _speed;
+}
+
 - (NSTimer *)togetherTimer{
     if (!_togetherTimer) {
-        _togetherTimer = [NSTimer scheduledTimerWithTimeInterval:self.togetherSpace
+        _togetherTimer = [NSTimer scheduledTimerWithTimeInterval:0.01
                                                           target:self
-                                                        selector:@selector(togetherAnimation)
+                                                        selector:@selector(togetherCanShow)
                                                         userInfo:nil
                                                          repeats:YES];
     }
