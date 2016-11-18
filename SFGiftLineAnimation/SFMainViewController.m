@@ -51,7 +51,7 @@
     if (!_sfGiftLineView) {
         _sfGiftLineView = [[SFGiftLineAnimationView alloc] initWithDirection:SF_LEFT_SHOW_DIRECTION showStyle:SF_TOGETHER_GIFT_SHOW];
         _sfGiftLineView.frame = CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 50);
-        _sfGiftLineView.backgroundColor = [UIColor orangeColor];
+        _sfGiftLineView.backgroundColor = [UIColor clearColor];
     }
     return _sfGiftLineView;
 }

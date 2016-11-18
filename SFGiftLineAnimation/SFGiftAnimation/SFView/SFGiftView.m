@@ -8,22 +8,29 @@
 
 #import "SFGiftView.h"
 
+static NSString *giftPre = @"赠送了";
 @implementation SFGiftView
 + (SFGiftView *)initForNib{
     NSArray *nibArr = [[NSBundle mainBundle] loadNibNamed:@"SFGiftView" owner:nil options:nil];
     return nibArr[0];
 }
 
+- (void)awakeFromNib{
+    [super awakeFromNib];
+    self.iconImageView.layer.masksToBounds = YES;
+    self.iconImageView.layer.cornerRadius = 15.f;
+}
+
 - (void)configureModel:(SFGiftLineModel *)configureModel{
     self.model = configureModel;
     self.senderName.text = configureModel.sender;
-    self.giftName.text = configureModel.giftName;
+    self.giftName.text = [NSString stringWithFormat:@"%@%@", giftPre, configureModel.giftName];
     [self configureSelfWidth];
 }
 
 #pragma mark ----------------------------------
 - (void)configureSelfWidth{
-    self.width = [self returnWidthWithFont:self.senderName.font str:self.senderName.text] + 10 + [self returnWidthWithFont:self.markStr.font str:self.markStr.text] + 10 + [self returnWidthWithFont:self.giftName.font str:self.giftName.text] + 20 + 10;
+    self.width = 3 + 30 + 10 + [self returnWidthWithFont:self.senderName.font str:self.senderName.text] + 8 + [self returnWidthWithFont:self.giftName.font str:self.giftName.text] + 18 + 20;
 }
 
 - (CGFloat)returnWidthWithFont:(UIFont *)font str:(NSString *)str{

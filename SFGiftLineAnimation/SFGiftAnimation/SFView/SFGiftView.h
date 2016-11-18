@@ -12,6 +12,7 @@
 @interface SFGiftView : UIView
 @property (weak, nonatomic) IBOutlet UILabel *senderName;
 @property (weak, nonatomic) IBOutlet UILabel *giftName;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 @property (weak, nonatomic) IBOutlet UILabel *markStr;
 
 @property (nonatomic, assign) CGFloat width;
