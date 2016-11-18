@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E65979671DDDA5C2001BED06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E65979661DDDA5C2001BED06 /* main.m */; };
+		E659796A1DDDA5C2001BED06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E65979691DDDA5C2001BED06 /* AppDelegate.m */; };
+		E65979701DDDA5C2001BED06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E659796E1DDDA5C2001BED06 /* Main.storyboard */; };
+		E65979721DDDA5C2001BED06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65979711DDDA5C2001BED06 /* Assets.xcassets */; };
+		E65979751DDDA5C2001BED06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65979731DDDA5C2001BED06 /* LaunchScreen.storyboard */; };
+		E65979801DDDA5C3001BED06 /* SFGiftLineAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E659797F1DDDA5C3001BED06 /* SFGiftLineAnimationTests.m */; };
+		E659798B1DDDA5C3001BED06 /* SFGiftLineAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E659798A1DDDA5C3001BED06 /* SFGiftLineAnimationUITests.m */; };
+		E659799A1DDDA626001BED06 /* SFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65979991DDDA626001BED06 /* SFMainViewController.m */; };
+		E65979A01DDDA6E8001BED06 /* SFGiftLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E659799F1DDDA6E8001BED06 /* SFGiftLineModel.m */; };
+		E65979A31DDDA725001BED06 /* SFGiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = E65979A21DDDA725001BED06 /* SFGiftView.m */; };
+		E65979A51DDDA739001BED06 /* SFGiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E65979A41DDDA739001BED06 /* SFGiftView.xib */; };
+		E65979A81DDDA9F0001BED06 /* SFGiftLineAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E65979A71DDDA9F0001BED06 /* SFGiftLineAnimationView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E659797C1DDDA5C3001BED06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E659795A1DDDA5C2001BED06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E65979611DDDA5C2001BED06;
+			remoteInfo = SFGiftLineAnimation;
+		};
+		E65979871DDDA5C3001BED06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E659795A1DDDA5C2001BED06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E65979611DDDA5C2001BED06;
+			remoteInfo = SFGiftLineAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E65979621DDDA5C2001BED06 /* SFGiftLineAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFGiftLineAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E65979661DDDA5C2001BED06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E65979681DDDA5C2001BED06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E65979691DDDA5C2001BED06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E659796F1DDDA5C2001BED06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E65979711DDDA5C2001BED06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E65979741DDDA5C2001BED06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E65979761DDDA5C2001BED06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E659797B1DDDA5C3001BED06 /* SFGiftLineAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFGiftLineAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E659797F1DDDA5C3001BED06 /* SFGiftLineAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFGiftLineAnimationTests.m; sourceTree = "<group>"; };
+		E65979811DDDA5C3001BED06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E65979861DDDA5C3001BED06 /* SFGiftLineAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFGiftLineAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E659798A1DDDA5C3001BED06 /* SFGiftLineAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFGiftLineAnimationUITests.m; sourceTree = "<group>"; };
+		E659798C1DDDA5C3001BED06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E65979981DDDA626001BED06 /* SFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMainViewController.h; sourceTree = "<group>"; };
+		E65979991DDDA626001BED06 /* SFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMainViewController.m; sourceTree = "<group>"; };
+		E659799E1DDDA6E8001BED06 /* SFGiftLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFGiftLineModel.h; sourceTree = "<group>"; };
+		E659799F1DDDA6E8001BED06 /* SFGiftLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFGiftLineModel.m; sourceTree = "<group>"; };
+		E65979A11DDDA725001BED06 /* SFGiftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFGiftView.h; sourceTree = "<group>"; };
+		E65979A21DDDA725001BED06 /* SFGiftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFGiftView.m; sourceTree = "<group>"; };
+		E65979A41DDDA739001BED06 /* SFGiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFGiftView.xib; sourceTree = "<group>"; };
+		E65979A61DDDA9F0001BED06 /* SFGiftLineAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFGiftLineAnimationView.h; sourceTree = "<group>"; };
+		E65979A71DDDA9F0001BED06 /* SFGiftLineAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFGiftLineAnimationView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E659795F1DDDA5C2001BED06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65979781DDDA5C3001BED06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65979831DDDA5C3001BED06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E65979591DDDA5C2001BED06 = {
+			isa = PBXGroup;
+			children = (
+				E65979641DDDA5C2001BED06 /* SFGiftLineAnimation */,
+				E659797E1DDDA5C3001BED06 /* SFGiftLineAnimationTests */,
+				E65979891DDDA5C3001BED06 /* SFGiftLineAnimationUITests */,
+				E65979631DDDA5C2001BED06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E65979631DDDA5C2001BED06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E65979621DDDA5C2001BED06 /* SFGiftLineAnimation.app */,
+				E659797B1DDDA5C3001BED06 /* SFGiftLineAnimationTests.xctest */,
+				E65979861DDDA5C3001BED06 /* SFGiftLineAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E65979641DDDA5C2001BED06 /* SFGiftLineAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E659799B1DDDA6A7001BED06 /* SFGiftAnimation */,
+				E65979681DDDA5C2001BED06 /* AppDelegate.h */,
+				E65979691DDDA5C2001BED06 /* AppDelegate.m */,
+				E65979981DDDA626001BED06 /* SFMainViewController.h */,
+				E65979991DDDA626001BED06 /* SFMainViewController.m */,
+				E659796E1DDDA5C2001BED06 /* Main.storyboard */,
+				E65979711DDDA5C2001BED06 /* Assets.xcassets */,
+				E65979731DDDA5C2001BED06 /* LaunchScreen.storyboard */,
+				E65979761DDDA5C2001BED06 /* Info.plist */,
+				E65979651DDDA5C2001BED06 /* Supporting Files */,
+			);
+			path = SFGiftLineAnimation;
+			sourceTree = "<group>";
+		};
+		E65979651DDDA5C2001BED06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E65979661DDDA5C2001BED06 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E659797E1DDDA5C3001BED06 /* SFGiftLineAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E659797F1DDDA5C3001BED06 /* SFGiftLineAnimationTests.m */,
+				E65979811DDDA5C3001BED06 /* Info.plist */,
+			);
+			path = SFGiftLineAnimationTests;
+			sourceTree = "<group>";
+		};
+		E65979891DDDA5C3001BED06 /* SFGiftLineAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E659798A1DDDA5C3001BED06 /* SFGiftLineAnimationUITests.m */,
+				E659798C1DDDA5C3001BED06 /* Info.plist */,
+			);
+			path = SFGiftLineAnimationUITests;
+			sourceTree = "<group>";
+		};
+		E659799B1DDDA6A7001BED06 /* SFGiftAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E65979A61DDDA9F0001BED06 /* SFGiftLineAnimationView.h */,
+				E65979A71DDDA9F0001BED06 /* SFGiftLineAnimationView.m */,
+				E659799C1DDDA6A7001BED06 /* SFModel */,
+				E659799D1DDDA6A7001BED06 /* SFView */,
+			);
+			path = SFGiftAnimation;
+			sourceTree = "<group>";
+		};
+		E659799C1DDDA6A7001BED06 /* SFModel */ = {
+			isa = PBXGroup;
+			children = (
+				E659799E1DDDA6E8001BED06 /* SFGiftLineModel.h */,
+				E659799F1DDDA6E8001BED06 /* SFGiftLineModel.m */,
+			);
+			path = SFModel;
+			sourceTree = "<group>";
+		};
+		E659799D1DDDA6A7001BED06 /* SFView */ = {
+			isa = PBXGroup;
+			children = (
+				E65979A11DDDA725001BED06 /* SFGiftView.h */,
+				E65979A21DDDA725001BED06 /* SFGiftView.m */,
+				E65979A41DDDA739001BED06 /* SFGiftView.xib */,
+			);
+			path = SFView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E65979611DDDA5C2001BED06 /* SFGiftLineAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E659798F1DDDA5C3001BED06 /* Build configuration list for PBXNativeTarget "SFGiftLineAnimation" */;
+			buildPhases = (
+				E659795E1DDDA5C2001BED06 /* Sources */,
+				E659795F1DDDA5C2001BED06 /* Frameworks */,
+				E65979601DDDA5C2001BED06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFGiftLineAnimation;
+			productName = SFGiftLineAnimation;
+			productReference = E65979621DDDA5C2001BED06 /* SFGiftLineAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E659797A1DDDA5C3001BED06 /* SFGiftLineAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E65979921DDDA5C3001BED06 /* Build configuration list for PBXNativeTarget "SFGiftLineAnimationTests" */;
+			buildPhases = (
+				E65979771DDDA5C3001BED06 /* Sources */,
+				E65979781DDDA5C3001BED06 /* Frameworks */,
+				E65979791DDDA5C3001BED06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E659797D1DDDA5C3001BED06 /* PBXTargetDependency */,
+			);
+			name = SFGiftLineAnimationTests;
+			productName = SFGiftLineAnimationTests;
+			productReference = E659797B1DDDA5C3001BED06 /* SFGiftLineAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E65979851DDDA5C3001BED06 /* SFGiftLineAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E65979951DDDA5C3001BED06 /* Build configuration list for PBXNativeTarget "SFGiftLineAnimationUITests" */;
+			buildPhases = (
+				E65979821DDDA5C3001BED06 /* Sources */,
+				E65979831DDDA5C3001BED06 /* Frameworks */,
+				E65979841DDDA5C3001BED06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E65979881DDDA5C3001BED06 /* PBXTargetDependency */,
+			);
+			name = SFGiftLineAnimationUITests;
+			productName = SFGiftLineAnimationUITests;
+			productReference = E65979861DDDA5C3001BED06 /* SFGiftLineAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E659795A1DDDA5C2001BED06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "cnlive-lsf";
+				TargetAttributes = {
+					E65979611DDDA5C2001BED06 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					E659797A1DDDA5C3001BED06 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E65979611DDDA5C2001BED06;
+					};
+					E65979851DDDA5C3001BED06 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E65979611DDDA5C2001BED06;
+					};
+				};
+			};
+			buildConfigurationList = E659795D1DDDA5C2001BED06 /* Build configuration list for PBXProject "SFGiftLineAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E65979591DDDA5C2001BED06;
+			productRefGroup = E65979631DDDA5C2001BED06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E65979611DDDA5C2001BED06 /* SFGiftLineAnimation */,
+				E659797A1DDDA5C3001BED06 /* SFGiftLineAnimationTests */,
+				E65979851DDDA5C3001BED06 /* SFGiftLineAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E65979601DDDA5C2001BED06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65979751DDDA5C2001BED06 /* LaunchScreen.storyboard in Resources */,
+				E65979A51DDDA739001BED06 /* SFGiftView.xib in Resources */,
+				E65979721DDDA5C2001BED06 /* Assets.xcassets in Resources */,
+				E65979701DDDA5C2001BED06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65979791DDDA5C3001BED06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65979841DDDA5C3001BED06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E659795E1DDDA5C2001BED06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65979A01DDDA6E8001BED06 /* SFGiftLineModel.m in Sources */,
+				E65979A31DDDA725001BED06 /* SFGiftView.m in Sources */,
+				E65979A81DDDA9F0001BED06 /* SFGiftLineAnimationView.m in Sources */,
+				E659796A1DDDA5C2001BED06 /* AppDelegate.m in Sources */,
+				E659799A1DDDA626001BED06 /* SFMainViewController.m in Sources */,
+				E65979671DDDA5C2001BED06 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65979771DDDA5C3001BED06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65979801DDDA5C3001BED06 /* SFGiftLineAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65979821DDDA5C3001BED06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E659798B1DDDA5C3001BED06 /* SFGiftLineAnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E659797D1DDDA5C3001BED06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E65979611DDDA5C2001BED06 /* SFGiftLineAnimation */;
+			targetProxy = E659797C1DDDA5C3001BED06 /* PBXContainerItemProxy */;
+		};
+		E65979881DDDA5C3001BED06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E65979611DDDA5C2001BED06 /* SFGiftLineAnimation */;
+			targetProxy = E65979871DDDA5C3001BED06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E659796E1DDDA5C2001BED06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E659796F1DDDA5C2001BED06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E65979731DDDA5C2001BED06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E65979741DDDA5C2001BED06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E659798D1DDDA5C3001BED06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E659798E1DDDA5C3001BED06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E65979901DDDA5C3001BED06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SFGiftLineAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnlive-lsf.SFGiftLineAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E65979911DDDA5C3001BED06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SFGiftLineAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnlive-lsf.SFGiftLineAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E65979931DDDA5C3001BED06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SFGiftLineAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnlive-lsf.SFGiftLineAnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFGiftLineAnimation.app/SFGiftLineAnimation";
+			};
+			name = Debug;
+		};
+		E65979941DDDA5C3001BED06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SFGiftLineAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnlive-lsf.SFGiftLineAnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFGiftLineAnimation.app/SFGiftLineAnimation";
+			};
+			name = Release;
+		};
+		E65979961DDDA5C3001BED06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SFGiftLineAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnlive-lsf.SFGiftLineAnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SFGiftLineAnimation;
+			};
+			name = Debug;
+		};
+		E65979971DDDA5C3001BED06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SFGiftLineAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnlive-lsf.SFGiftLineAnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SFGiftLineAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E659795D1DDDA5C2001BED06 /* Build configuration list for PBXProject "SFGiftLineAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E659798D1DDDA5C3001BED06 /* Debug */,
+				E659798E1DDDA5C3001BED06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E659798F1DDDA5C3001BED06 /* Build configuration list for PBXNativeTarget "SFGiftLineAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E65979901DDDA5C3001BED06 /* Debug */,
+				E65979911DDDA5C3001BED06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E65979921DDDA5C3001BED06 /* Build configuration list for PBXNativeTarget "SFGiftLineAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E65979931DDDA5C3001BED06 /* Debug */,
+				E65979941DDDA5C3001BED06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E65979951DDDA5C3001BED06 /* Build configuration list for PBXNativeTarget "SFGiftLineAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E65979961DDDA5C3001BED06 /* Debug */,
+				E65979971DDDA5C3001BED06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E659795A1DDDA5C2001BED06 /* Project object */;
+}
