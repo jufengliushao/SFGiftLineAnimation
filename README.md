@@ -35,6 +35,10 @@ select different show style for your project.
  use the method for init    使用自带的初始化方法
  
 ![image](https://github.com/jufengliushao/SFGiftLineAnimation/blob/master/ReadmeImage/Readme-5.png)
+
+ add SFGiftModel Array  使用以下方法添加数据
+ 
+![image](https://github.com/jufengliushao/SFGiftLineAnimation/blob/master/ReadmeImage/Readme-6.png)
  
 <h2>3.Attention</h2>
 
