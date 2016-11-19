@@ -30,8 +30,8 @@ select different show style for your project.
 <h3>2.3 coding  编码实现</h3>
  import the SFGiftLineAnimationView.h       引入 SFGiftLineAnimationView.h
  
+ ![image](https://github.com/jufengliushao/SFGiftLineAnimation/blob/master/ReadmeImage/Readme-7.png)
 
- 
  use the method for init    使用自带的初始化方法
  
 ![image](https://github.com/jufengliushao/SFGiftLineAnimation/blob/master/ReadmeImage/Readme-5.png)
