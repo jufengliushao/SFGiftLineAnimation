@@ -10,9 +10,9 @@ select different show style for your project.
   
   你可以使用SFGiftLineAnimation去展示礼物的显示动画，礼物动画是单条显示，可以选择出现方向以及展现的形式，例如单条显示，多条显示。
   
-![image](https://github.com/jufengliushao/SFGiftLineAnimation/blob/master/ReadmeImage/Readme-0.png)
+![image](https://github.com/jufengliushao/SFGiftLineAnimation/blob/master/ReadmeImage/Readme-9.png)
 
-![image](https://github.com/jufengliushao/SFGiftLineAnimation/blob/master/ReadmeImage/Readme-1.png)
+![image](https://github.com/jufengliushao/SFGiftLineAnimation/blob/master/ReadmeImage/Readme-10.png)
 
 <h2>2.How to use  使用方法</h2>
 <h3>2.1 import folder</h3>
@@ -39,6 +39,8 @@ select different show style for your project.
  add SFGiftModel Array  使用以下方法添加数据
  
 ![image](https://github.com/jufengliushao/SFGiftLineAnimation/blob/master/ReadmeImage/Readme-6.png)
+
+![image](https://github.com/jufengliushao/SFGiftLineAnimation/blob/master/ReadmeImage/Readme-8.png)
  
 <h2>3.Attention</h2>
 
