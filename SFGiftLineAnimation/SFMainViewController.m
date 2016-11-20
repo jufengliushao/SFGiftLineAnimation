@@ -11,6 +11,8 @@
 
 @interface SFMainViewController ()
 @property (nonatomic, strong) SFGiftLineAnimationView *sfGiftLineView;
+@property (weak, nonatomic) IBOutlet UILabel *descLabel;
+@property (weak, nonatomic) IBOutlet UILabel *connectLabel;
 @end
 
 @implementation SFMainViewController
@@ -21,6 +23,10 @@
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(addGiftData:)];
     [self.view addGestureRecognizer:tap];
+    
+    self.descLabel.numberOfLines = 0;
+    self.descLabel.text = @"Click the phone screen, and the models will be added each by three. Thank you for using SFGiftLineAnimation, if you have any question or suggest, please e-mail me.";
+    self.connectLabel.text = @"e-mail:jufengliushao@163.com";
     // Do any additional setup after loading the view.
 }
 
