@@ -46,7 +46,7 @@
     model1.giftName = @"毛利兰";
     
     SFGiftLineModel *model2 = [[SFGiftLineModel alloc] init];
-    model2.sender = @"柯南 & 毛利兰";
+    model2.sender = @"柯南 & 毛利兰 111111111111";
     model2.giftName = @"园子 & 灰原哀";
     
     [self.sfGiftLineView addDataArray:@[model0, model1, model2]];
